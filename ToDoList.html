@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+  <style>
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: white;
+    }
+
+    .container {
+        width: 300px;
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    .input-container {
+        display: flex;
+        gap: 10px;
+    }
+
+    input {
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    button {
+        padding: 10px;
+        background: darkgreen;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background: green;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+        margin-top: 10px;
+    }
+
+    li {
+        display: flex;
+        justify-content: space-between;
+        background: #eee;
+        padding: 8px;
+        margin: 5px 0;
+        border-radius: 5px;
+    }
+
+    li button {
+        background: red;
+        border: none;
+        color: white;
+        padding: 5px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    #showTasksBtn {
+        width: 100%;
+        margin-top: 10px;
+        background: blue;
+    }
+
+    #showTasksBtn:hover {
+        background: blue;
+    }
+  </style>
+</head>
+<body>
+    <div class="container">
+        <h1>To-Do List</h1>
+        <div class="input-container">
+            <input type="text" id="taskInput" placeholder="Add a new task...">
+            <button id="addTaskBtn">Add</button>
+        </div>
+        <ul id="taskList"></ul>
+        <a href="ToDoList2.html"><button id="showTasksBtn">Show Tasks</button></a>
+    </div>
+
+    
+</body>
+</html>
